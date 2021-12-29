@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                    ./run_bot.sh                                                    Modified  
 #!/bin/bash
 # run traffic bot in loop
 # docker run -d -p 8118:8118 -p 2090:2090 -e tors=25 -e privoxy=1 zeta0/alpine-tor
