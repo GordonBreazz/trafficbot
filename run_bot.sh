@@ -29,10 +29,8 @@ echo "+----------------------------------------------+"
 echo "| Iteration #$run_count running at $now             |"
 echo "+----------------------------------------------+"
 echo "{"
-#result=$(xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 1024x768x24" node --harmony /root/traffic/trafficbot/index.js ->
-timeout 5m  xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 1024x768x24" node --harmony /root/traffic/trafficbot/index.js>
+timeout 5m  xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 1024x768x24" node --harmony /root/traffic/trafficbot/index.js --url https://mysite.com/ --proxy 127.0.0.1 --port 8118  --windows 1 --time 2
 echo "}"
-#echo "$result"
 start_date=$(date -u -d "$now" +"%s")
 now=$(date +"%T")
 final_date=$(date -u -d "$now" +"%s");
