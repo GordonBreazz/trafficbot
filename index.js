@@ -224,14 +224,15 @@ const venenoTrafficBot = async id => {
 		.wait(miliseconds)
 		.end()
 		.then(function (result) {
-			console.log("result: " + result);
+			if (result) console.log("result: " + result) 
+			  else console.log("Successful")
 		})
 		.catch(function (error) {
-			console.error('Error:', error);
+			if (error) console.error('Error:', error);
 		});
 
 	} catch(e) {
-		console.error("Error: ", e);
+		if (error) console.error("Error: ", e);
 	}
 }
 
