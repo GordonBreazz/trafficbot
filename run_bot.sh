@@ -39,7 +39,7 @@ echo "+----------------------------------------------+"
 echo "| Iteration #$run_count done at $now.               |"
 echo "| The task was performed in $dif           |"
 echo "| Wait 15 second. Press CTRL+C for stop        |"
-sleep 15s
+sleep 10s
 pkill -f node
 done
 echo "+----------------------------------------------+"
