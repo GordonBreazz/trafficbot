@@ -43,5 +43,5 @@ sleep 10s
 pkill -f node
 done
 echo "+----------------------------------------------+"
-echo "| Script execution over                        |"
+echo "| Script execution over                         |"
 echo "+----------------------------------------------+"
